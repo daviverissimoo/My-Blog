@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,32 +18,77 @@
     </header>
 
     <main>
+
+        <!-- Primeiro post -->
         <article>
-            <h2>Meu primeiro post</h2>
 
-            <p><strong>Por: Davi Ferreira Verissimo</strong></p>
-
-            <img 
+            <img
                 src="https://images.unsplash.com/photo-1518770660439-4636190af475"
                 alt="Computador e componentes tecnológicos representando programação e tecnologia"
             >
 
-            <p>
-                Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.
-            </p>
+            <div class="conteudo-post">
 
-            <!-- O botão permite que o leitor registre uma reação ao post -->
-            <button id="botaoReacao">
-                ❤️ Reagir
+                <h2>Meu primeiro post</h2>
 
-                <!-- O span mostra a quantidade de reações -->
-                <span id="contador">0</span>
-            </button>
+                <p class="autor">
+                    <strong>Por: Davi Ferreira Verissimo</strong>
+                </p>
+
+                <p>
+                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas
+                    de programação e curiosidades da área de tecnologia.
+                </p>
+
+                <button id="botaoReacao">
+                    ❤️ Reagir
+                    <span id="contador">0</span>
+                </button>
+
+            </div>
 
         </article>
+
+
+        <!-- Segundo post -->
+        <article>
+
+            <div class="conteudo-post">
+
+                <h2>
+                    Inteligência Artificial<br>
+                    <span>Como ela está transformando a tecnologia</span>
+                </h2>
+
+                <p class="autor">
+                    <strong>Por: Davi Ferreira Verissimo</strong>
+                </p>
+
+                <p>
+                    A Inteligência Artificial está cada vez mais presente no
+                    nosso dia a dia, sendo utilizada em aplicativos, sistemas
+                    de recomendação, assistentes virtuais e diversas outras tecnologias.
+                </p>
+
+                <p>
+                    Um conceito importante nesse cenário é o
+                    <strong>Machine Learning</strong>, uma área da Inteligência
+                    Artificial que permite que sistemas aprendam a partir de dados.
+                </p>
+
+                <p class="artigo-fonte">
+                    Fonte: IBM — Artificial Intelligence
+                </p>
+
+            </div>
+
+        </article>
+
     </main>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
+```
