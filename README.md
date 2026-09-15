@@ -18,9 +18,11 @@ Nesta versão, foram adicionados:
 * ✨ Efeito `hover` nos cards dos posts
 * 🔗 Links no nome do autor e na imagem
 
-### Versão atual
+### Versão atual 
+Data: 16/09/2026
 
-<img width="1045" height="1008" alt="Versão atual do blog" src="https://github.com/user-attachments/assets/be18ce50-6690-432f-9ae7-1cc3b79576fc" />
+
+<img width="1706" height="999" alt="image" src="https://github.com/user-attachments/assets/47738a1b-5e31-464b-bd0e-773282c495ec" />
 
 ---
 
@@ -63,3 +65,14 @@ Nesta etapa, foi criado o primeiro post do blog, com título, autor, conteúdo e
 ## 📌 Objetivo
 
 Este projeto faz parte do meu processo de aprendizado em desenvolvimento web, colocando em prática conceitos de **HTML, CSS e JavaScript** e acompanhando a evolução do projeto ao longo das aulas.
+
+
+## Próximas mudanças
+
+As próximas versões do projeto terão novas formas de interação com os posts:
+
+❤️ Gostei → reação emocional ao conteúdo.
+💬 Comentar → permitir que o leitor deixe sua opinião ou faça uma pergunta.
+🔖 Salvar → permitir que o leitor guarde um post para consultar posteriormente.
+
+A ideia é continuar evoluindo o projeto e adicionar novas funcionalidades utilizando JavaScript, tornando o blog cada vez mais interativo.
