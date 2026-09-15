@@ -24,6 +24,13 @@ article {
     background-color: #1e293b;
     padding: 30px;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex: 0 0 100%;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -36,11 +43,98 @@ p {
 
 article img {
     width: 100%;
-    max-width: 700px;
+    max-width: 300px;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 20px;
+
     border-radius: 10px;
+
+    align-self: flex-start;
+}
+
+button {
+    background-color: #60a5fa;
+    color: #121826;
+    border: none;```css
+body {
+    background-color: #121826;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+article {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex: 0 0 100%;
+    box-sizing: border-box;
+
+    gap: 25px;
+}
+
+article img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    align-self: flex-start;
+}
+
+.conteudo-post {
+    flex: 1;
+}
+
+h2 {
+    color: #a78bfa;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 span {
+    font-size: 18px;
+    color: #60a5fa;
+}
+
+p {
+    color: #cbd5e1;
+}
+
+.autor {
+    margin-top: 5px;
 }
 
 button {
@@ -51,8 +145,31 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #a78bfa;
+}
+
+.artigo-fonte {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+}
+```
+
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a78bfa;
+}
+
+.artigo-fonte {
+    font-size: 14px;
+    font-style: italic;
 }
