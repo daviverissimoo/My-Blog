@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,17 +22,26 @@
         <!-- Primeiro post -->
         <article>
 
-            <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-                alt="Computador e componentes tecnológicos representando programação e tecnologia"
-            >
+            <!-- Imagem transformada em link -->
+            <a href="https://unsplash.com/photos/1518770660439-4636190af475" target="_blank">
+                <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                    alt="Computador e componentes tecnológicos representando programação e tecnologia"
+                >
+            </a>
 
             <div class="conteudo-post">
 
                 <h2>Meu primeiro post</h2>
 
+                <!-- Nome do autor transformado em link -->
                 <p class="autor">
-                    <strong>Por: Davi Ferreira Verissimo</strong>
+                    <strong>
+                        Por:
+                        <a href="https://github.com/" target="_blank">
+                            Davi Ferreira Verissimo
+                        </a>
+                    </strong>
                 </p>
 
                 <p>
@@ -40,6 +49,7 @@
                     de programação e curiosidades da área de tecnologia.
                 </p>
 
+                <!-- Botão de reação -->
                 <button id="botaoReacao">
                     ❤️ Reagir
                     <span id="contador">0</span>
@@ -91,4 +101,3 @@
 </body>
 
 </html>
-```
