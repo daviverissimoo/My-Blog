@@ -1,65 +1,26 @@
+
+:root {
+    --cor-primaria: #60a5fa;
+    --cor-destaque: #39ff14;
+    --cor-fundo: #f1f5f9;
+    --cor-card: #ffffff;
+    --cor-texto: #1e293b;
+    --cor-sombra: rgba(30, 41, 59, 0.20);
+}
+
+/* Tema escuro */
+.tema-escuro {
+    --cor-primaria: #60a5fa;
+    --cor-destaque: #00e5ff;
+    --cor-fundo: #121826;
+    --cor-card: #1e293b;
+    --cor-texto: #f1f5f9;
+    --cor-sombra: rgba(96, 165, 250, 0.35);
+}
+
 body {
-    background-color: #121826;
-    color: #f1f5f9;
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    background-color: #1e293b;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-h1 {
-    color: #60a5fa;
-}
-
-article {
-    background-color: #1e293b;
-    padding: 30px;
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    flex: 0 0 100%;
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #a78bfa;
-}
-
-p {
-    color: #cbd5e1;
-}
-
-article img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 20px;
-
-    border-radius: 10px;
-
-    align-self: flex-start;
-}
-
-button {
-    background-color: #60a5fa;
-    color: #121826;
-    border: none;```css
-body {
-    background-color: #121826;
-    color: #f1f5f9;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: Arial, sans-serif;
     max-width: 1000px;
     margin: 0 auto;
@@ -69,14 +30,16 @@ body {
 
 header {
     text-align: center;
-    background-color: #1e293b;
+    background-color: var(--cor-card);
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
+
+    box-shadow: 0 4px 12px var(--cor-sombra);
 }
 
 h1 {
-    color: #60a5fa;
+    color: var(--cor-primaria);
     margin-bottom: 10px;
 }
 
@@ -91,7 +54,7 @@ main {
 }
 
 article {
-    background-color: #1e293b;
+    background-color: var(--cor-card);
     padding: 25px;
     border-radius: 15px;
 
@@ -103,6 +66,18 @@ article {
     box-sizing: border-box;
 
     gap: 25px;
+
+    border: 2px solid var(--cor-destaque);
+
+    box-shadow: 0 4px 12px var(--cor-sombra);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px var(--cor-sombra);
 }
 
 article img {
@@ -126,7 +101,7 @@ h2 {
 
 h2 span {
     font-size: 18px;
-    color: #60a5fa;
+    color: var(--cor-primaria);
 }
 
 p {
@@ -137,39 +112,82 @@ p {
     margin-top: 5px;
 }
 
-button {
-    background-color: #60a5fa;
-    color: #121826;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
+.autor a {
+    color: var(--cor-primaria);
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #a78bfa;
+.autor a:hover {
+    text-decoration: underline;
 }
+
+
+/* Botões de interação */
+
+.interacoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.interacoes button {
+    background-color: var(--cor-primaria);
+    color: #121826;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 0;
+
+    transition: transform 0.2s ease;
+}
+
+.interacoes button:hover {
+    background-color: #a78bfa;
+    transform: scale(1.05);
+}
+
+
+/* Fonte do artigo */
 
 .artigo-fonte {
     font-size: 14px;
     font-style: italic;
     margin-top: 20px;
 }
-```
 
-    padding: 10px 15px;
-    border-radius: 8px;
+
+/* Botão de tema escuro */
+
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+
+    font-size: 32px;
+    padding: 12px;
+
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    border: none;
     cursor: pointer;
-    font-size: 16px;
 }
 
-button:hover {
-    background-color: #a78bfa;
-}
 
-.artigo-fonte {
-    font-size: 14px;
-    font-style: italic;
+/* Botão voltar ao topo */
+
+.btn-voltar-topo {
+    position: fixed;
+    bottom: 90px;
+    right: 16px;
+
+    font-size: 28px;
+    padding: 12px;
+
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
